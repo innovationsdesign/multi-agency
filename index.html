@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Purpose Template 1</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&family=Bebas+Neue&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=WDXL+Lubrifont+JP+N&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo-container">
+          <!-- Company Name / Logo-->
+          <img src="images/logo.png" alt="Comapny Name" />
+        </div>
+        <div class="menu-icon">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </div>
+      </header>
+
+      <!--nav starts here-->
+      <nav class="main-nav">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">About Us</a>
+        <a href="#" class="nav-link">Sermons</a>
+        <a href="#" class="nav-link">Ministries</a>
+        <a href="#" class="nav-link">Contact Us</a>
+      </nav>
+      <!--nav section end here-->
+
+      <!--hero section starts here-->
+
+      <section class="hero">
+        <video autoplay muted playsinline id="hero-video">
+          <source src="images/vd-3.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <img
+          src="images/prayer.jpg"
+          class="hero-image hr-image-1"
+          data-image="image-main"
+        />
+        <img
+          src="images/bible-study.jpg"
+          class="hero-image hr-image-2"
+          data-image="heading1"
+        />
+        <img
+          src="images/worshiping.jpg"
+          class="hero-image hr-image-3"
+          data-image="heading2"
+        />
+        <!--<img
+          src="images/hero-flower-3.jpg"
+          class="hero-image hr-image-4"
+          data-image="heading3"
+        />-->
+
+        <div class="header-intro">
+          <div class="intro-wrapper">
+            <div class="intro" data-heading="heading1">
+              <div class="horizontal"></div>
+              <div class="title">Our Ministries</div>
+            </div>
+            <div class="info">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </div>
+          </div>
+
+          <div class="intro-wrapper">
+            <div class="intro" data-heading="heading2">
+              <div class="horizontal"></div>
+              <div class="title">Services</div>
+            </div>
+            <div class="info">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </div>
+          </div>
+
+          <div class="intro-wrapper">
+            <div class="intro" data-heading="heading3">
+              <div class="horizontal"></div>
+              <div class="title">Give</div>
+            </div>
+            <div class="info">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hero section ends here-->
+
+      <!--welcome section starts here-->
+      <section class="welcome center-column scroll-in-view">
+        <div class="welcome-image">
+          <img src="images/hero-flower-1.jpg" />
+        </div>
+        <div class="welcome-content">
+          <h1>Welcome to Living Faith Ministries!</h1>
+          <div class="welcome-info">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries,
+          </div>
+        </div>
+      </section>
+      <!-- welcome section ends here-->
+
+      <!--call out area-->
+      <section
+        class="section-info center-column scroll-in-view section-background"
+      >
+        <h2>Our Ministries</h2>
+        <div class="info-slider">
+          <div class="info-slider-content">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries,
+            </p>
+
+            <div class="view-all-btn">Learn More</div>
+          </div>
+          <!--swiper starts here-->
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="content-wrapper">
+                  <div class="swiper-content slide-column">
+                    <div class="info-wrapper">
+                      <h2>Men Ministry</h2>
+                      <div class="short-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text
+                      </div>
+                      <div class="view-all-btn">Learn More</div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-image slide-column">
+                    <img src="images/men.jpg" class="swipe-img" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="content-wrapper">
+                  <div class="swiper-content slide-column">
+                    <div class="info-wrapper">
+                      <h2>Women Ministry</h2>
+                      <div class="short-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text
+                      </div>
+                      <div class="view-all-btn">Learn More</div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-image slide-column">
+                    <img src="images/women.jpg" class="swipe-img" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="content-wrapper">
+                  <div class="swiper-content slide-column">
+                    <div class="info-wrapper">
+                      <h2>Youth</h2>
+                      <div class="short-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text
+                      </div>
+                      <div class="view-all-btn">Learn More</div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-image slide-column">
+                    <img src="images/youth.jpg" class="swipe-img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--swiper container ends here-->
+
+          <!--controllers here-->
+          <div class="controllers">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--weekly services-->
+      <section class="services-section scroll-in-view center-column">
+        <h2 class="h2-inner">Weekly Services</h2>
+
+        <div class="services-container-wrapper">
+          <!--service wrapperstarts here-->
+          <div class="service-wrapper">
+            <div class="service-heading">Sunday</div>
+            <div class="service-content">
+              <ul>
+                <li>
+                  <span
+                    ><i
+                      class="fa fa-chevron-circle-left"
+                      aria-hidden="true"
+                    ></i></span
+                  >Sunday School 9:30am
+                </li>
+                <li>
+                  <span
+                    ><i
+                      class="fa fa-chevron-circle-left"
+                      aria-hidden="true"
+                    ></i></span
+                  >Worship Service 10:30am
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--service wrapper ends here-->
+          <!--service wrapperstarts here-->
+          <div class="service-wrapper">
+            <div class="service-heading">Monday</div>
+            <div class="service-content">
+              <ul>
+                <li>
+                  <span
+                    ><i
+                      class="fa fa-chevron-circle-left"
+                      aria-hidden="true"
+                    ></i></span
+                  >Intercessory Prayer 7:00pm
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--service wrapper ends here-->
+
+          <!--service wrapperstarts here-->
+          <div class="service-wrapper">
+            <div class="service-heading">Wednesday</div>
+            <div class="service-content">
+              <ul>
+                <li>
+                  <span
+                    ><i
+                      class="fa fa-chevron-circle-left"
+                      aria-hidden="true"
+                    ></i></span
+                  >Prayer 6:30pm
+                </li>
+                <li>
+                  <span
+                    ><i
+                      class="fa fa-chevron-circle-left"
+                      aria-hidden="true"
+                    ></i></span
+                  >Life Changers Class(Bible Study) 7:00pm
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--service wrapper ends here-->
+
+          <!--service wrapperstarts here-->
+          <div class="service-wrapper">
+            <div class="service-heading">Thursday</div>
+            <div class="service-content">
+              <ul>
+                <li>
+                  <span
+                    ><i
+                      class="fa fa-chevron-circle-left"
+                      aria-hidden="true"
+                    ></i></span
+                  >Prayerline(conference call) 8:00pm
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--service wrapper ends here-->
+        </div>
+      </section>
+
+      <!--contact us-->
+      <section class="contact scroll-in-view center-column section-background">
+        <h2 class="h2-upper">Contact Us</h2>
+        <div class="contact-wrapper">
+          <div class="section-col-image">
+            <img src="images/hero-flower-2.jpg" alt="Roses" />
+          </div>
+          <div class="section-col-content">
+            <form>
+              <div class="form-field-wrapper">
+                <label for="Name">Fullname:</label>
+                <input type="text" name="firstname" placeholder="FUllname" />
+              </div>
+
+              <div class="form-field-wrapper">
+                <label for="Email">Email:</label>
+                <input type="email" name="Email" placeholder="Email Address" />
+              </div>
+
+              <div class="form-field-wrapper">
+                <label for="phone">Phone Number</label>
+                <input type="phone" name="Phone" placeholder="xxx-xxx-xxxx" />
+              </div>
+
+              <textarea name="message" rows="10" cols="30"> </textarea>
+
+              <input type="submit" name="Send" value="Send" />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--Map section-->
+      <section class="direction scroll-in-view center-column">
+        <div class="container-inner">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57288.12820169705!2d-80.22434478791448!3d26.180147773552903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d90103c8d3816d%3A0xe399fd6e7c35ce69!2sOakland%20Park%2C%20FL!5e0!3m2!1sen!2sus!4v1676342311920!5m2!1sen!2sus"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            spellcheck="false"
+            aria-label="To enrich screen reader interactions, please activate Accessibility in Grammarly extension settings"
+          ></iframe>
+        </div>
+      </section>
+
+      <!--footer section-->
+      <footer class="section-background">
+        <div class="logo-social">
+          <div class="logo">
+            <img src="images/logo.png" alt="Living Faith Ministries" />
+          </div>
+
+          <ul class="social">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <ul>
+            <li>About Us</li>
+            <li>Prayer Requesr</li>
+          </ul>
+        </div>
+
+        <div class="footer-services">
+          <div>Weekly Services</div>
+          <div class="footer-services-wrapper">
+            <div class="service-info">
+              <div class="service-hd">Sunday</div>
+              <div>Sunday School 9:30am</div>
+              <div>Worship Service 10:30am</div>
+            </div>
+
+            <div class="service-info">
+              <div class="service-hd">Monday</div>
+              <div>Intercessory Prayer 7:00pm</div>
+            </div>
+
+            <div class="service-info">
+              <div class="service-hd">Wednesday</div>
+              <div>Prayer 6:30pm</div>
+              <div>Life Changers Class(Bible Study) 7:00pm</div>
+            </div>
+
+            <div class="service-info">
+              <div class="service-hd">Thursday</div>
+              <div>Prayerline(conference call) 8:00pm</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="address">
+          <div>Address Here</div>
+          <div>xxx-xxx-xxxx</div>
+          <div>emailadress@gmail.com</div>
+        </div>
+      </footer>
+
+      <!--copyright info-->
+      <div class="copyright">Copyrightinfo</div>
+    </div>
+    <!-- end of the main container-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -25,6 +25,7 @@
 
 :root {
   --h2-heading: "Bebas Neue", sans-serif;
+  --h1-size: clamp(1rem, 2.22vw, 2rem);
 }
 
 .section-background {
@@ -138,6 +139,7 @@
 h1 {
   font-family: var(--h2-heading);
   color: var(--dark-navy);
+  font-size: var(--h1-size);
 }
 
 header {
@@ -196,6 +198,10 @@ header {
     right: 5rem;
     position: fixed;
     transition: right 0.3s ease-in-out;
+
+    @media (max-width: 850px) {
+      right: 2rem;
+    }
 
     .line {
       max-width: 100%;
@@ -463,6 +469,7 @@ nav.main-nav {
     height: 100%;
     overflow: hidden;
     max-width: 100%;
+    aspect-ratio: 16/9;
 
     img {
       display: block;
@@ -499,8 +506,8 @@ nav.main-nav {
     }
 
     h1 {
-      font-size: 1.5rem;
-      /*color: red;*/
+      /*font-size: 1.5rem;
+     color: red;*/
       font-weight: bold;
     }
 
@@ -907,7 +914,7 @@ footer {
   @media (max-width: 920px) {
     & {
       grid-template-columns: 1fr;
-      //gap: 20px;
+      /*gap: 20px;*/
       justify-content: center;
       align-items: center;
     }
@@ -999,7 +1006,7 @@ footer {
 
     @media (max-width: 920px) {
       & {
-        gap: 20px;
+        /*gap: 20px;*/
         justify-content: center;
         align-items: center;
       }

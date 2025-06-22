@@ -9,6 +9,33 @@ if (getMenuIcon) {
   });
 }
 
+/* change header background after acertain points*/
+
+const targetToObserver = document.querySelector(".hero");
+const changeHeader = document.querySelector("header");
+const changeIconColor = document.querySelector(".show-nav .line");
+
+const observeCallback = function (entries, observe) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      console.log("is intersecting");
+      changeHeader.classList.remove("changeHeaderBackground");
+    } else {
+      console.log("no longer intersecting - background change");
+      changeHeader.classList.add("changeHeaderBackground");
+    }
+  });
+};
+
+const options = {
+  root: null,
+  rootMargin: "100px",
+  threshold: 0.5,
+};
+
+const observerTarget = new IntersectionObserver(observeCallback, options);
+observerTarget.observe(targetToObserver);
+
 //changing the images when hover
 const getHeroImage = document.querySelectorAll(".hero-image");
 const getAllHeroHeading = document.querySelectorAll(".intro");
